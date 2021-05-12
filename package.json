@@ -4,10 +4,11 @@
   "description": "This is a realtime pizza app",
   "main": "index.js",
   "scripts": {
-    
     "dev": "nodemon server.js",
-    "serve": "node server.js"
-
+    "serve": "node server.js",
+    "development": "mix",
+    "watch": "npx mix watch",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js "
   },
   "author": "Ayush Joshi",
   "license": "ISC",
@@ -17,6 +18,12 @@
     "express-ejs-layouts": "^2.5.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.7"
+    "cross-env": "^7.0.3",
+    "laravel-mix": "^6.0.19",
+    "nodemon": "^2.0.7",
+    "postcss": "^8.1.14",
+    "resolve-url-loader": "^3.1.2",
+    "sass": "^1.32.12",
+    "sass-loader": "^11.0.1"
   }
 }
