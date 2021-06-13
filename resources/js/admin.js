@@ -1,7 +1,8 @@
 import axios from 'axios'
-import moment from 'moment' 
+import moment from 'moment'
+import Noty from 'noty' 
 
- function initAdmin() {
+ export function initAdmin() {
     const orderTableBody = document.querySelector('#orderTableBody')
     let orders = []
     let markup
@@ -81,4 +82,4 @@ import moment from 'moment'
 }
 
 
-module.exports = initAdmin
+//module.exports = initAdmin
