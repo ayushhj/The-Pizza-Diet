@@ -90,7 +90,7 @@ updateStatus(order);
 //Socket
 
 let socket = io()
-initAdmin()
+
 
 // Join
 if(order) {

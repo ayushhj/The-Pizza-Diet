@@ -25,7 +25,7 @@ function orderController(){
     
                 // Emit
                 const eventEmitter = req.app.get('eventEmitter')
-                eventEmitter.emit('orderPlaced', ord)
+                eventEmitter.emit('orderPlaced', result)
                 
                 return res.redirect('/customer/orders')
               })
